@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es-AR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Proyectos y Laboratorio | JavierLab</title>
+  <meta name="description" content="Laboratorio digital de JavierLab: desarrollos web, herramientas de gestión operativa y sistemas en progreso." />
+  <link rel="canonical" href="https://javierlab.com.ar/proyectos.html" />
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23070B14'/><text x='50%' y='66%' font-family='sans-serif' font-weight='900' font-size='52' fill='%2338BDF8' text-anchor='middle'>JL</text></svg>" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noche: '#070B14',
+            panel: '#0F172A',
+            borde: '#1E293B',
+            electrico: '#38BDF8',
+            electricoHover: '#7DD3FC'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-noche text-slate-100 font-sans antialiased selection:bg-electrico selection:text-noche flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-noche/90 backdrop-blur border-b border-borde">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-xl font-extrabold tracking-wider text-electrico">
+        JAVIER<span class="text-slate-100">LAB</span>
+      </a>
+
+      <!-- Navegación Desktop -->
+      <ul class="hidden md:flex space-x-6 text-sm font-medium text-slate-300">
+        <li><a href="index.html" class="hover:text-electrico transition">Inicio</a></li>
+        <li><a href="servicios.html" class="hover:text-electrico transition">Servicios</a></li>
+        <li><a href="perfil.html" class="hover:text-electrico transition">Perfil &amp; CV</a></li>
+        <li><a href="proyectos.html" class="text-electrico font-semibold border-b-2 border-electrico pb-1">Proyectos</a></li>
+        <li><a href="bitacora.html" class="hover:text-electrico transition">Bitácora</a></li>
+        <li><a href="contacto.html" class="hover:text-electrico transition">Contacto</a></li>
+      </ul>
+
+      <!-- Botón Menú Móvil -->
+      <button id="menu-btn" aria-label="Abrir menú" class="md:hidden text-slate-300 hover:text-electrico focus:outline-none p-1">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Navegación Móvil -->
+    <div id="mobile-menu" class="hidden md:hidden bg-panel border-b border-borde px-4 pt-2 pb-4 space-y-2 text-sm font-medium">
+      <a href="index.html" class="block py-2 text-slate-300 hover:text-electrico transition">Inicio</a>
+      <a href="servicios.html" class="block py-2 text-slate-300 hover:text-electrico transition">Servicios</a>
+      <a href="perfil.html" class="block py-2 text-slate-300 hover:text-electrico transition">Perfil &amp; CV</a>
+      <a href="proyectos.html" class="block py-2 text-electrico font-semibold">Proyectos</a>
+      <a href="bitacora.html" class="block py-2 text-slate-300 hover:text-electrico transition">Bitácora</a>
+      <a href="contacto.html" class="block py-2 text-slate-300 hover:text-electrico transition">Contacto</a>
+    </div>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="flex-grow max-w-6xl mx-auto w-full px-4 py-12 sm:py-16 space-y-12">
+
+    <!-- Encabezado -->
+    <section class="max-w-3xl">
+      <span class="inline-block text-electrico font-mono text-xs uppercase tracking-widest mb-3 bg-electrico/10 px-3.5 py-1.5 rounded-full border border-electrico/20">
+        LABORATORIO DIGITAL &middot; SECCIÓN EN CONSTRUCCIÓN
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">
+        Proyectos y <span class="text-electrico">Desarrollos</span>
+      </h1>
+      <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+        Espacio reservado para documentar herramientas digitales, sistemas de control operativo y sitios web desarrollados en el laboratorio. Actualmente estamos preparando las fichas técnicas y capturas de cada avance.
+      </p>
+    </section>
+
+    <!-- Grilla de Estado de Proyectos -->
+    <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Proyecto 1 -->
+      <article class="bg-panel/70 border border-borde rounded-2xl p-6 flex flex-col justify-between space-y-6">
+        <div>
+          <span class="inline-block text-[11px] font-mono uppercase tracking-wider text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 px-2.5 py-1 rounded-md">
+            Publicado
+          </span>
+          <h2 class="text-xl font-bold text-white mt-3">Portal Web JavierLab</h2>
+          <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+            Sitio institucional multipágina desplegado con HTML5, Tailwind CSS, JavaScript y DNS gestionados vía Cloudflare.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-borde flex items-center justify-between text-xs font-mono text-slate-400">
+          <span>HTML &middot; Tailwind &middot; JS</span>
+          <a href="https://github.com/javierlab" target="_blank" rel="noopener noreferrer" class="text-electrico hover:underline">
+            GitHub &rarr;
+          </a>
+        </div>
+      </article>
+
+      <!-- Proyecto 2 -->
+      <article class="bg-panel/60 border border-dashed border-borde rounded-2xl p-6 flex flex-col justify-between space-y-6">
+        <div>
+          <span class="inline-block text-[11px] font-mono uppercase tracking-wider text-amber-400 bg-amber-400/10 border border-amber-400/20 px-2.5 py-1 rounded-md">
+            En Desarrollo
+          </span>
+          <h2 class="text-xl font-bold text-white mt-3">Control de Obras y Cuadrillas</h2>
+          <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+            Sistema para seguimiento de certificaciones, documentación de contratistas, vencimientos y reportes operativos.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-borde/60 text-xs font-mono text-slate-500">
+          Ficha técnica y capturas próximamente
+        </div>
+      </article>
+
+      <!-- Proyecto 3 -->
+      <article class="bg-panel/60 border border-dashed border-borde rounded-2xl p-6 flex flex-col justify-between space-y-6">
+        <div>
+          <span class="inline-block text-[11px] font-mono uppercase tracking-wider text-electrico bg-electrico/10 border border-electrico/20 px-2.5 py-1 rounded-md">
+            En Diseño
+          </span>
+          <h2 class="text-xl font-bold text-white mt-3">Gestor Presupuestario</h2>
+          <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+            Aplicación web orientada al registro ordenado de ingresos, egresos y seguimiento mensual.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-borde/60 text-xs font-mono text-slate-500">
+          En etapa de arquitectura
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Cierre -->
+    <section class="bg-panel/70 border border-borde rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+      <div class="space-y-1">
+        <h2 class="text-lg font-bold text-white">¿Necesitás desarrollar una web institucional o herramienta a medida?</h2>
+        <p class="text-slate-400 text-sm">Podés revisar el módulo de desarrollo web o iniciar una consulta directa.</p>
+      </div>
+      <div class="flex flex-wrap gap-3 shrink-0">
+        <a href="servicios.html" class="bg-electrico hover:bg-electricoHover text-noche font-bold text-sm px-5 py-3 rounded-xl transition shadow-lg shadow-electrico/15">
+          Ver Servicios
+        </a>
+        <a href="contacto.html" class="bg-electrico hover:bg-electricoHover text-noche font-bold text-sm px-5 py-3 rounded-xl transition shadow-lg shadow-electrico/15">
+          Contactar
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-borde py-6 text-center text-xs text-slate-500">
+    <p>&copy; 2026 JavierLab.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

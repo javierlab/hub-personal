@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es-AR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Bitácora de Obras y Experiencia en Planta | JavierLab</title>
+  <meta name="description" content="Registro de obras eléctricas, plantas industriales, relevamientos técnicos, planos AutoCAD y proyectos donde colaboró Javier González." />
+  <link rel="canonical" href="https://javierlab.com.ar/bitacora.html" />
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23070B14'/><text x='50%' y='66%' font-family='sans-serif' font-weight='900' font-size='52' fill='%2338BDF8' text-anchor='middle'>JL</text></svg>" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noche: '#070B14',
+            panel: '#0F172A',
+            borde: '#1E293B',
+            electrico: '#38BDF8',
+            electricoHover: '#7DD3FC'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-noche text-slate-100 font-sans antialiased selection:bg-electrico selection:text-noche flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-noche/90 backdrop-blur border-b border-borde">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-xl font-extrabold tracking-wider text-electrico">
+        JAVIER<span class="text-slate-100">LAB</span>
+      </a>
+
+      <!-- Navegación Desktop -->
+      <ul class="hidden md:flex space-x-6 text-sm font-medium text-slate-300">
+        <li><a href="index.html" class="hover:text-electrico transition">Inicio</a></li>
+        <li><a href="servicios.html" class="hover:text-electrico transition">Servicios</a></li>
+        <li><a href="perfil.html" class="hover:text-electrico transition">Perfil &amp; CV</a></li>
+        <li><a href="proyectos.html" class="hover:text-electrico transition">Proyectos</a></li>
+        <li><a href="bitacora.html" class="text-electrico font-semibold border-b-2 border-electrico pb-1">Bitácora</a></li>
+        <li><a href="contacto.html" class="hover:text-electrico transition">Contacto</a></li>
+      </ul>
+
+      <!-- Botón Menú Móvil -->
+      <button id="menu-btn" aria-label="Abrir menú" class="md:hidden text-slate-300 hover:text-electrico focus:outline-none p-1">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Navegación Móvil -->
+    <div id="mobile-menu" class="hidden md:hidden bg-panel border-b border-borde px-4 pt-2 pb-4 space-y-2 text-sm font-medium">
+      <a href="index.html" class="block py-2 text-slate-300 hover:text-electrico transition">Inicio</a>
+      <a href="servicios.html" class="block py-2 text-slate-300 hover:text-electrico transition">Servicios</a>
+      <a href="perfil.html" class="block py-2 text-slate-300 hover:text-electrico transition">Perfil &amp; CV</a>
+      <a href="proyectos.html" class="block py-2 text-slate-300 hover:text-electrico transition">Proyectos</a>
+      <a href="bitacora.html" class="block py-2 text-electrico font-semibold">Bitácora</a>
+      <a href="contacto.html" class="block py-2 text-slate-300 hover:text-electrico transition">Contacto</a>
+    </div>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="flex-grow max-w-6xl mx-auto w-full px-4 py-12 sm:py-16 space-y-12">
+
+    <!-- Encabezado -->
+    <section class="max-w-3xl">
+      <span class="inline-block text-electrico font-mono text-xs uppercase tracking-widest mb-3 bg-electrico/10 px-3.5 py-1.5 rounded-full border border-electrico/20">
+        REGISTRO TÉCNICO &middot; SECCIÓN EN DESARROLLO
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">
+        Bitácora de <span class="text-electrico">Obras y Proyectos</span>
+      </h1>
+      <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+        Recorrido técnico por las obras eléctricas, plantas industriales, relevamientos en campo y trabajos de oficina técnica en los que participé. Actualmente estamos organizando las fichas de cada intervención respetando la confidencialidad de cada cliente.
+      </p>
+    </section>
+
+    <!-- Bloque En Desarrollo -->
+    <section class="bg-panel/60 border border-dashed border-borde rounded-2xl p-8 sm:p-12 text-center space-y-5">
+      <span class="inline-block text-xs font-mono text-electrico uppercase tracking-wider bg-electrico/10 border border-electrico/20 px-3 py-1 rounded-full">
+        En Desarrollo
+      </span>
+      <h2 class="text-xl sm:text-2xl font-bold text-white">
+        Documentando intervenciones en planta, tableros y planos CAO
+      </h2>
+      <p class="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+        Próximamente vas a encontrar acá el detalle técnico de relevamientos eléctricos, cómputos de materiales, habilitaciones en planta y documentación conforme a obra realizada a lo largo de estos años.
+      </p>
+      <div class="pt-3 flex flex-wrap justify-center gap-4">
+        <a href="perfil.html" class="bg-electrico hover:bg-electricoHover text-noche font-bold text-sm px-6 py-3 rounded-xl transition shadow-lg shadow-electrico/15">
+          Ver Perfil y Experiencia
+        </a>
+        <a href="servicios.html" class="bg-electrico hover:bg-electricoHover text-noche font-bold text-sm px-6 py-3 rounded-xl transition shadow-lg shadow-electrico/15">
+          Ver Servicios
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-borde py-6 text-center text-xs text-slate-500">
+    <p>&copy; 2026 JavierLab.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

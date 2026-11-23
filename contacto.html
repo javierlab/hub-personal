@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es-AR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Contacto y Consultas | JavierLab</title>
+  <meta name="description" content="Contactá a JavierLab para consultas sobre cómputos métricos de obras eléctricas, planos AutoCAD, gestión de portales industriales, H&S, control de cuadrillas o desarrollo web." />
+  <link rel="canonical" href="https://javierlab.com.ar/contacto.html" />
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23070B14'/><text x='50%' y='66%' font-family='sans-serif' font-weight='900' font-size='52' fill='%2338BDF8' text-anchor='middle'>JL</text></svg>" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://javierlab.com.ar/contacto.html" />
+  <meta property="og:title" content="Contacto y Consultas | JavierLab" />
+  <meta property="og:description" content="Iniciá una consulta técnica o administrativa para tu obra o empresa." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noche: '#070B14',
+            panel: '#0F172A',
+            borde: '#1E293B',
+            electrico: '#38BDF8',
+            electricoHover: '#7DD3FC'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-noche text-slate-100 font-sans antialiased selection:bg-electrico selection:text-noche flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-noche/90 backdrop-blur border-b border-borde">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-xl font-extrabold tracking-wider text-electrico">
+        JAVIER<span class="text-slate-100">LAB</span>
+      </a>
+
+      <!-- Navegación Desktop -->
+      <ul class="hidden md:flex space-x-6 text-sm font-medium text-slate-300">
+        <li><a href="index.html" class="hover:text-electrico transition">Inicio</a></li>
+        <li><a href="servicios.html" class="hover:text-electrico transition">Servicios</a></li>
+        <li><a href="perfil.html" class="hover:text-electrico transition">Perfil &amp; CV</a></li>
+        <li><a href="proyectos.html" class="hover:text-electrico transition">Proyectos</a></li>
+        <li><a href="bitacora.html" class="hover:text-electrico transition">Bitácora</a></li>
+        <li><a href="contacto.html" class="text-electrico font-semibold border-b-2 border-electrico pb-1">Contacto</a></li>
+      </ul>
+
+      <!-- Botón Menú Móvil -->
+      <button id="menu-btn" aria-label="Abrir menú" class="md:hidden text-slate-300 hover:text-electrico focus:outline-none p-1">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Navegación Móvil -->
+    <div id="mobile-menu" class="hidden md:hidden bg-panel border-b border-borde px-4 pt-2 pb-4 space-y-2 text-sm font-medium">
+      <a href="index.html" class="block py-2 text-slate-300 hover:text-electrico transition">Inicio</a>
+      <a href="servicios.html" class="block py-2 text-slate-300 hover:text-electrico transition">Servicios</a>
+      <a href="perfil.html" class="block py-2 text-slate-300 hover:text-electrico transition">Perfil &amp; CV</a>
+      <a href="proyectos.html" class="block py-2 text-slate-300 hover:text-electrico transition">Proyectos</a>
+      <a href="bitacora.html" class="block py-2 text-slate-300 hover:text-electrico transition">Bitácora</a>
+      <a href="contacto.html" class="block py-2 text-electrico font-semibold">Contacto</a>
+    </div>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="flex-grow max-w-6xl mx-auto w-full px-4 py-12 sm:py-16 space-y-12">
+
+    <!-- Encabezado -->
+    <section class="max-w-3xl">
+      <span class="inline-block text-electrico font-mono text-xs uppercase tracking-widest mb-3 bg-electrico/10 px-3.5 py-1.5 rounded-full border border-electrico/20">
+        CONTACTO DIRECTO &middot; CONSULTAS Y COTIZACIONES
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">
+        Iniciá tu <span class="text-electrico">Consulta</span>
+      </h1>
+      <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+        Contame qué necesitás resolver para tu obra o empresa. Respondemos a la brevedad con una propuesta ajustada a tu requerimiento.
+      </p>
+    </section>
+
+    <!-- Grilla Formulario + Columna Lateral -->
+    <section class="grid lg:grid-cols-3 gap-8 items-start">
+
+      <!-- Formulario de Consulta -->
+      <div class="lg:col-span-2 bg-panel/70 border border-borde rounded-2xl p-6 sm:p-8">
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
+          <input type="hidden" name="access_key" value="73c41e46-c3c0-4aa6-8733-d427fa547dc7">
+          <input type="hidden" name="subject" value="Nueva consulta desde JavierLab.com.ar">
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label for="nombre" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
+                Nombre y Apellido *
+              </label>
+              <input type="text" id="nombre" name="nombre" required maxlength="40" placeholder="Ej. Martín Gómez"
+                class="w-full bg-noche border border-borde focus:border-electrico rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none transition">
+            </div>
+
+            <div>
+              <label for="empresa" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
+                Empresa / Contratista
+              </label>
+              <input type="text" id="empresa" name="empresa" maxlength="45" placeholder="Opcional"
+                class="w-full bg-noche border border-borde focus:border-electrico rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none transition">
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label for="email" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
+                Correo Electrónico *
+              </label>
+              <input type="email" id="email" name="email" required maxlength="60" placeholder="correo@empresa.com"
+                class="w-full bg-noche border border-borde focus:border-electrico rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none transition">
+            </div>
+
+            <div>
+              <label for="telefono" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
+                Teléfono de Contacto
+              </label>
+              <input type="tel" id="telefono" name="telefono" maxlength="20" inputmode="numeric"
+                oninput="this.value = this.value.replace(/[^0-9+\-\s()]/g, '')"
+                placeholder="Ej. 11 1234-5678"
+                class="w-full bg-noche border border-borde focus:border-electrico rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none transition">
+            </div>
+          </div>
+
+          <div>
+            <label for="servicio" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-2">
+              Módulo o Área de Consulta *
+            </label>
+            <select id="servicio" name="servicio" required
+              class="w-full bg-noche border border-borde focus:border-electrico rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition">
+              <option value="general">Consulta general / Combinación de módulos</option>
+              <option value="computos">Módulo 01 — Cómputo Métrico y Cotizaciones (Obras Eléctricas)</option>
+              <option value="autocad">Módulo 02 — Planos Eléctricos en AutoCAD (CAO y Proyección)</option>
+              <option value="portales">Módulo 03 — Portales, Acreditaciones y Pólizas</option>
+              <option value="hys">Módulo 04 — Gestión Documental de Higiene y Seguridad (H&amp;S)</option>
+              <option value="cuadrillas">Módulo 05 — Control Administrativo de Obras y Cuadrillas</option>
+              <option value="web">Módulo 06 — Web Institucional y Correos Corporativos</option>
+            </select>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label for="mensaje" class="block text-xs font-mono uppercase tracking-wider text-slate-300">
+                Detalle de la Consulta *
+              </label>
+              <span id="char-count" class="text-[11px] font-mono text-slate-400">0 / 500</span>
+            </div>
+            <textarea id="mensaje" name="mensaje" rows="5" required maxlength="500"
+              placeholder="Describí brevemente el tipo de obra, cantidad de plantas/operarios, planos a relevar o necesidad puntual..."
+              class="w-full min-h-[120px] max-h-[260px] resize-y bg-noche border border-borde focus:border-electrico rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none transition"></textarea>
+          </div>
+
+          <div class="pt-1 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <button type="submit" id="submit-btn"
+              class="bg-electrico hover:bg-electricoHover text-noche font-bold text-sm px-7 py-3.5 rounded-xl transition shadow-lg shadow-electrico/20">
+              Enviar Consulta
+            </button>
+            <span id="form-status" class="text-xs text-slate-400"></span>
+          </div>
+        </form>
+      </div>
+
+      <!-- Columna Lateral: Correo, Perfiles y Cobertura -->
+      <aside class="space-y-6">
+
+        <!-- Correo Directo para Pliegos -->
+        <div class="bg-panel/70 border border-borde rounded-2xl p-6 space-y-3">
+          <span class="text-xs font-mono text-electrico uppercase tracking-wider">Pliegos y Planos</span>
+          <h2 class="text-lg font-bold text-white">Correo Directo</h2>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Para enviar archivos en DWG, PDF o pliegos de licitación, podés copiar la dirección de correo:
+          </p>
+          <div class="bg-noche border border-borde rounded-xl p-3.5 flex items-center justify-between gap-2">
+            <span class="text-xs sm:text-sm font-mono text-slate-200 truncate">info@javierlab.com.ar</span>
+            <button type="button" id="copy-mail-btn"
+              class="shrink-0 bg-electrico hover:bg-electricoHover text-noche font-bold text-xs px-3 py-1.5 rounded-lg transition">
+              Copiar
+            </button>
+          </div>
+        </div>
+
+        <!-- Perfiles Oficiales y Personal -->
+        <div class="bg-panel/70 border border-borde rounded-2xl p-6 space-y-5">
+          <div class="space-y-3">
+            <span class="text-xs font-mono text-electrico uppercase tracking-wider">Perfiles Oficiales</span>
+            <h2 class="text-lg font-bold text-white">Redes Profesionales</h2>
+            <div class="space-y-3">
+              <a href="https://www.linkedin.com/in/javier-gonzalez-oficina-tecnica/" target="_blank" rel="noopener noreferrer"
+                class="block text-center bg-electrico hover:bg-electricoHover text-noche font-bold text-sm px-5 py-3 rounded-xl transition shadow-lg shadow-electrico/10">
+                LinkedIn Profesional
+              </a>
+              <a href="https://github.com/javierlab" target="_blank" rel="noopener noreferrer"
+                class="block text-center bg-electrico hover:bg-electricoHover text-noche font-bold text-sm px-5 py-3 rounded-xl transition shadow-lg shadow-electrico/10">
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Perfil Personal -->
+          <div class="pt-4 border-t border-borde space-y-2.5">
+            <span class="text-[11px] font-mono text-slate-400 uppercase tracking-wider">Perfil Personal</span>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Cuenta personal y bitácora cotidiana:
+            </p>
+            <a href="https://instagram.com/javier.j11" target="_blank" rel="noopener noreferrer"
+              class="block text-center bg-electrico hover:bg-electricoHover text-noche font-bold text-sm px-5 py-2.5 rounded-xl transition shadow-lg shadow-electrico/10">
+              Instagram (@javier.j11)
+            </a>
+          </div>
+        </div>
+
+        <!-- Área de Cobertura -->
+        <div class="bg-panel/70 border border-borde rounded-2xl p-6 space-y-2.5">
+          <span class="text-xs font-mono text-electrico uppercase tracking-wider">Área de Cobertura</span>
+          <h2 class="text-lg font-bold text-white">Presencial y Remoto</h2>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            <strong class="text-white">Base en Zona Sur / AMBA:</strong> Relevamientos presenciales directos en Zona Sur y CABA.
+          </p>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            <strong class="text-slate-200">Resto de AMBA (ej. corredor Pilar / Ruta 7) y otras zonas:</strong> Sujeto a coordinación previa según disponibilidad y alcance de la obra. Gestión documental, cómputos y planos desde croquis 100 % remotos a todo el país.
+          </p>
+        </div>
+
+      </aside>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-borde py-6 text-center text-xs text-slate-500">
+    <p>&copy; 2026 JavierLab.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Preselección de módulo desde parámetro URL (?servicio=...)
+      const params = new URLSearchParams(window.location.search);
+      const servicioParam = params.get('servicio');
+      const selectServicio = document.getElementById('servicio');
+
+      if (servicioParam && selectServicio) {
+        const optionExists = Array.from(selectServicio.options).some(opt => opt.value === servicioParam);
+        if (optionExists) {
+          selectServicio.value = servicioParam;
+        }
+      }
+
+      // Copiado rápido de correo
+      const copyBtn = document.getElementById('copy-mail-btn');
+      if (copyBtn) {
+        copyBtn.addEventListener('click', () => {
+          navigator.clipboard.writeText('info@javierlab.com.ar');
+          copyBtn.textContent = '¡Copiado!';
+          setTimeout(() => {
+            copyBtn.textContent = 'Copiar';
+          }, 2500);
+        });
+      }
+
+      // Contador de caracteres en vivo + reinicio automático
+      const mensajeInput = document.getElementById('mensaje');
+      const charCount = document.getElementById('char-count');
+      const actualizarContador = () => {
+        if (mensajeInput && charCount) {
+          charCount.textContent = `${mensajeInput.value.length} / 500`;
+        }
+      };
+
+      if (mensajeInput) {
+        mensajeInput.addEventListener('input', actualizarContador);
+      }
+
+      // Envío asíncrono
+      const form = document.getElementById('contact-form');
+      const statusText = document.getElementById('form-status');
+      const submitBtn = document.getElementById('submit-btn');
+
+      if (form) {
+        form.addEventListener('reset', () => {
+          setTimeout(actualizarContador, 0);
+        });
+
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const formData = new FormData(form);
+
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Enviando...';
+          statusText.textContent = '';
+
+          try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+              method: 'POST',
+              headers: {
+                'Accept': 'application/json'
+              },
+              body: formData
+            });
+            const data = await response.json();
+
+            if (data.success) {
+              statusText.textContent = 'Consulta enviada correctamente. Te responderemos a la brevedad.';
+              statusText.className = 'text-xs text-emerald-400 font-medium';
+              form.reset();
+            } else {
+              statusText.textContent = 'Web3Forms dice: ' + (data.message || 'Error desconocido');
+              statusText.className = 'text-xs text-rose-400';
+            }
+          } catch (error) {
+            statusText.textContent = 'Error de conexión. Verificá tu acceso a internet o usá el correo directo.';
+            statusText.className = 'text-xs text-rose-400';
+          } finally {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Enviar Consulta';
+          }
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es-AR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Servicios Técnicos, Administrativos y de Ingeniería | JavierLab</title>
+  <meta name="description" content="Catálogo de servicios para contratistas y empresas industriales: portales de ingreso (GCG, SICOP, WIPROT), gestión H&S, control de cuadrillas, cómputos métricos de obras eléctricas, planos AutoCAD y web corporativa." />
+  <link rel="canonical" href="https://javierlab.com.ar/servicios.html" />
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23070B14'/><text x='50%' y='66%' font-family='sans-serif' font-weight='900' font-size='52' fill='%2338BDF8' text-anchor='middle'>JL</text></svg>" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://javierlab.com.ar/servicios.html" />
+  <meta property="og:title" content="Catálogo de Servicios — Gestión Técnica y de Obras | JavierLab" />
+  <meta property="og:description" content="Soporte modular para empresas contratistas, PyMEs industriales y profesionales independientes." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noche: '#070B14',
+            panel: '#0F172A',
+            borde: '#1E293B',
+            electrico: '#38BDF8',
+            electricoHover: '#7DD3FC'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-noche text-slate-100 font-sans antialiased selection:bg-electrico selection:text-noche flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-noche/90 backdrop-blur border-b border-borde">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-xl font-extrabold tracking-wider text-electrico">
+        JAVIER<span class="text-slate-100">LAB</span>
+      </a>
+
+      <!-- Navegación Desktop -->
+      <ul class="hidden md:flex space-x-6 text-sm font-medium text-slate-300">
+        <li><a href="index.html" class="hover:text-electrico transition">Inicio</a></li>
+        <li><a href="servicios.html" class="text-electrico font-semibold border-b-2 border-electrico pb-1">Servicios</a></li>
+        <li><a href="perfil.html" class="hover:text-electrico transition">Perfil &amp; CV</a></li>
+        <li><a href="proyectos.html" class="hover:text-electrico transition">Proyectos</a></li>
+        <li><a href="bitacora.html" class="hover:text-electrico transition">Bitácora</a></li>
+        <li><a href="contacto.html" class="hover:text-electrico transition">Contacto</a></li>
+      </ul>
+
+      <!-- Botón Menú Móvil -->
+      <button id="menu-btn" aria-label="Abrir menú" class="md:hidden text-slate-300 hover:text-electrico focus:outline-none p-1">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Navegación Móvil -->
+    <div id="mobile-menu" class="hidden md:hidden bg-panel border-b border-borde px-4 pt-2 pb-4 space-y-2 text-sm font-medium">
+      <a href="index.html" class="block py-2 text-slate-300 hover:text-electrico transition">Inicio</a>
+      <a href="servicios.html" class="block py-2 text-electrico font-semibold">Servicios</a>
+      <a href="perfil.html" class="block py-2 text-slate-300 hover:text-electrico transition">Perfil &amp; CV</a>
+      <a href="proyectos.html" class="block py-2 text-slate-300 hover:text-electrico transition">Proyectos</a>
+      <a href="bitacora.html" class="block py-2 text-slate-300 hover:text-electrico transition">Bitácora</a>
+      <a href="contacto.html" class="block py-2 text-slate-300 hover:text-electrico transition">Contacto</a>
+    </div>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="flex-grow max-w-6xl mx-auto w-full px-4 py-12 sm:py-16 space-y-14">
+
+    <!-- Introducción Catálogo -->
+    <section class="max-w-4xl">
+      <span class="inline-block text-electrico font-mono text-xs uppercase tracking-widest mb-3 bg-electrico/10 px-3.5 py-1.5 rounded-full border border-electrico/20">
+        CATÁLOGO DE SERVICIOS &middot; GESTIÓN TÉCNICA, ADMINISTRATIVA Y DE INGENIERÍA
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-5">
+        Soluciones Modulares para <span class="text-electrico">Obras y Empresas</span>
+      </h1>
+      <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-6">
+        Podés contratar módulos individuales para resolver un cuello de botella puntual o combinar varios frentes en un esquema continuo a medida de tu estructura, sin sumar costos fijos de personal interno.
+      </p>
+
+      <!-- Acceso Rápido a Módulos -->
+      <div class="flex flex-wrap gap-2 text-xs">
+        <a href="#modulo-1" class="bg-panel hover:bg-borde border border-borde hover:border-electrico text-slate-300 hover:text-white px-3 py-1.5 rounded-lg transition">01. Cómputos Eléctricos</a>
+        <a href="#modulo-2" class="bg-panel hover:bg-borde border border-borde hover:border-electrico text-slate-300 hover:text-white px-3 py-1.5 rounded-lg transition">02. Planos Eléctricos CAD</a>
+        <a href="#modulo-3" class="bg-panel hover:bg-borde border border-borde hover:border-electrico text-slate-300 hover:text-white px-3 py-1.5 rounded-lg transition">03. Portales y Pólizas</a>
+        <a href="#modulo-4" class="bg-panel hover:bg-borde border border-borde hover:border-electrico text-slate-300 hover:text-white px-3 py-1.5 rounded-lg transition">04. Higiene y Seguridad</a>
+        <a href="#modulo-5" class="bg-panel hover:bg-borde border border-borde hover:border-electrico text-slate-300 hover:text-white px-3 py-1.5 rounded-lg transition">05. Control de Cuadrillas</a>
+        <a href="#modulo-6" class="bg-panel hover:bg-borde border border-borde hover:border-electrico text-slate-300 hover:text-white px-3 py-1.5 rounded-lg transition">06. Web Corporativa</a>
+      </div>
+    </section>
+
+    <!-- Listado de Módulos -->
+    <section class="space-y-8">
+
+      <!-- Módulo 01 -->
+      <article id="modulo-1" class="scroll-mt-24 bg-panel/70 border border-borde hover:border-electrico/50 rounded-2xl p-6 sm:p-8 transition">
+        <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6">
+          <div class="space-y-4 max-w-3xl">
+            <div class="flex flex-wrap items-center gap-3">
+              <span class="text-xs font-mono font-bold text-noche bg-electrico px-2.5 py-0.5 rounded">MÓDULO 01</span>
+              <span class="text-xs font-mono text-electrico uppercase tracking-wider">Modalidad: Por Presupuesto / Licitación Entregada</span>
+            </div>
+            <h2 class="text-2xl font-bold text-white">Cómputo Métrico y Cotizaciones (Obras Eléctricas)</h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              Relevamiento de pliegos y planos de instalaciones eléctricas, conteo métrico detallado de materiales (metros de bandeja portacables, conductores, cañerías, cajas, tableros y accesorios), solicitud de precios a proveedores y armado de presupuestos listos para presentar en <strong class="text-white">plazos ágiles acordados según la complejidad de cada licitación</strong>.
+            </p>
+          </div>
+
+          <div class="shrink-0 flex flex-col sm:flex-row lg:flex-col gap-3 lg:w-56">
+            <a href="contacto.html?servicio=computos" class="text-center bg-electrico hover:bg-electricoHover text-noche font-bold text-sm px-5 py-3 rounded-xl transition shadow-lg shadow-electrico/10">
+              Solicitar cotización
+            </a>
+            <span class="text-[11px] text-center text-slate-400">Obra eléctrica chica, mantenimiento o licitación</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Módulo 02 -->
+      <article id="modulo-2" class="scroll-mt-24 bg-panel/70 border border-borde hover:border-electrico/50 rounded-2xl p-6 sm:p-8 transition">
+        <div class="space-y-6">
+          <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6">
+            <div class="space-y-3 max-w-3xl">
+              <div class="flex flex-wrap items-center gap-3">
+                <span class="text-xs font-mono font-bold text-noche bg-electrico px-2.5 py-0.5 rounded">MÓDULO 02</span>
+                <span class="text-xs font-mono text-electrico uppercase tracking-wider">3 Niveles Técnicos &middot; Instalaciones Eléctricas</span>
+              </div>
+              <h2 class="text-2xl font-bold text-white">Planos Eléctricos en AutoCAD (CAO y Proyección)</h2>
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                Documentación técnica en AutoCAD 2D especializada en instalaciones eléctricas industriales y comerciales: desde el pase a limpio de croquis hasta relevamientos en planta y proyección eléctrica integral.
+              </p>
+            </div>
+
+            <div class="shrink-0 lg:w-56">
+              <a href="contacto.html?servicio=autocad" class="block text-center bg-electrico hover:bg-electricoHover text-noche font-bold text-sm px-5 py-3 rounded-xl transition shadow-lg shadow-electrico/10">
+                Consultar por planos
+              </a>
+            </div>
+          </div>
+
+          <!-- Niveles Módulo 02 -->
+          <div class="grid md:grid-cols-3 gap-4">
+            <div class="bg-noche/90 border border-borde rounded-xl p-5 space-y-2">
+              <span class="text-xs font-mono font-bold text-electrico uppercase">Nivel 1 &mdash; Planos CAO (Pase a Digital)</span>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Volcado en AutoCAD a detalle desde borradores o croquis en papel (sin relevamiento). Incluye hasta 5 layouts eléctricos: Fuerza Motriz, Corrientes Débiles, Iluminación, Tomas y Esquema Unifilar.
+              </p>
+            </div>
+
+            <div class="bg-noche/90 border border-borde rounded-xl p-5 space-y-2">
+              <span class="text-xs font-mono font-bold text-electrico uppercase">Nivel 2 &mdash; Planos CAO Completos</span>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Relevamiento eléctrico presencial en sitio, gestión de ingreso, EPP, pólizas y trazado digital completo Conforme a Obra según dimensión y condiciones de planta.
+              </p>
+            </div>
+
+            <div class="bg-noche/90 border border-electrico/30 rounded-xl p-5 space-y-2">
+              <span class="text-xs font-mono font-bold text-electrico uppercase">Nivel 3 &mdash; Proyección Eléctrica</span>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Evaluación de necesidades eléctricas, unificación de criterios, asistencia a reuniones técnicas, ajustes por revisiones, planos de proyección (FM, CD, Tomas, Unifilares), equilibrio de cargas y cómputo preliminar de materiales.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Módulo 03 -->
+      <article id="modulo-3" class="scroll-mt-24 bg-panel/70 border border-borde hover:border-electrico/50 rounded-2xl p-6 sm:p-8 transition">
+        <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6">
+          <div class="space-y-4 max-w-3xl">
+            <div class="flex flex-wrap items-center gap-3">
+              <span class="text-xs font-mono font-bold text-noche bg-electrico px-2.5 py-0.5 rounded">MÓDULO 03</span>
+              <span class="text-xs font-mono text-electrico uppercase tracking-wider">Modalidad: Abono Fijo Mensual</span>
+            </div>
+            <h2 class="text-2xl font-bold text-white">Portales, Acreditaciones y Pólizas</h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              Alta, carga mensual y seguimiento continuo en plataformas de ingreso (<strong class="text-white">GCG Controls, WiiProt, Sicop, Exaptian</strong> y portales corporativos). Control preventivo de vencimientos de ART, nómina, CNR, seguros de vida y vehículos, y gestión de habilitaciones para evitar rechazos en puerta de planta.
+            </p>
+          </div>
+
+          <div class="shrink-0 flex flex-col sm:flex-row lg:flex-col gap-3 lg:w-56">
+            <a href="contacto.html?servicio=portales" class="text-center bg-electrico hover:bg-electricoHover text-noche font-bold text-sm px-5 py-3 rounded-xl transition shadow-lg shadow-electrico/10">
+              Consultar modalidad
+            </a>
+            <span class="text-[11px] text-center text-slate-400">Escalado según cantidad de plantas y rotación</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Módulo 04 -->
+      <article id="modulo-4" class="scroll-mt-24 bg-panel/70 border border-borde hover:border-electrico/50 rounded-2xl p-6 sm:p-8 transition">
+        <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6">
+          <div class="space-y-4 max-w-3xl">
+            <div class="flex flex-wrap items-center gap-3">
+              <span class="text-xs font-mono font-bold text-noche bg-electrico px-2.5 py-0.5 rounded">MÓDULO 04</span>
+              <span class="text-xs font-mono text-electrico uppercase tracking-wider">Modalidad: Abono Mensual o Combo con Portales</span>
+            </div>
+            <h2 class="text-2xl font-bold text-white">Gestión Documental de Higiene y Seguridad (H&amp;S)</h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              Preparación y control de planillas de entrega de EPP, registro de capacitaciones, declaraciones juradas (DDJJ), armado de carpetas de obra y articulación directa con Licenciado/Técnico de H&amp;S matriculado para firmas legales y charlas en sitio.
+            </p>
+          </div>
+
+          <div class="shrink-0 flex flex-col sm:flex-row lg:flex-col gap-3 lg:w-56">
+            <a href="contacto.html?servicio=hys" class="text-center bg-electrico hover:bg-electricoHover text-noche font-bold text-sm px-5 py-3 rounded-xl transition shadow-lg shadow-electrico/10">
+              Consultar modalidad
+            </a>
+            <span class="text-[11px] text-center text-slate-400">Disponible independiente o integrado al Módulo 03</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Módulo 05 -->
+      <article id="modulo-5" class="scroll-mt-24 bg-panel/70 border border-borde hover:border-electrico/50 rounded-2xl p-6 sm:p-8 transition">
+        <div class="space-y-6">
+          <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6">
+            <div class="space-y-3 max-w-3xl">
+              <div class="flex flex-wrap items-center gap-3">
+                <span class="text-xs font-mono font-bold text-noche bg-electrico px-2.5 py-0.5 rounded">MÓDULO 05</span>
+                <span class="text-xs font-mono text-electrico uppercase tracking-wider">2 Niveles de Alcance &middot; Abono Mensual</span>
+              </div>
+              <h2 class="text-2xl font-bold text-white">Control Administrativo de Obras, Cuadrillas y Costo Real Operativo</h2>
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                Ordenamiento administrativo y financiero para conocer la rentabilidad real de cada obra y evitar desvíos entre lo presupuestado y lo ejecutado.
+              </p>
+            </div>
+
+            <div class="shrink-0 lg:w-56">
+              <a href="contacto.html?servicio=cuadrillas" class="block text-center bg-electrico hover:bg-electricoHover text-noche font-bold text-sm px-5 py-3 rounded-xl transition shadow-lg shadow-electrico/10">
+                Consultar por Nivel A o B
+              </a>
+            </div>
+          </div>
+
+          <!-- Niveles Módulo 05 -->
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-noche/90 border border-borde rounded-xl p-5 space-y-2.5">
+              <span class="text-xs font-mono font-bold text-electrico uppercase">Nivel A &mdash; Control Operativo y Costo Real</span>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Recepción del parte de días trabajados, emisión de liquidaciones/recibos y control de facturas de colaboradores; verificación de facturación propia (con/sin IVA sin errores), remitos, certificados y saldos por obra; e <strong class="text-white">Informes de Costo Real por Operario</strong> (jornal neto + incidencia proporcional de seguros/ART, H&amp;S, indumentaria/EPP y gastos administrativos frente al valor cobrado).
+              </p>
+            </div>
+
+            <div class="bg-noche/90 border border-electrico/30 rounded-xl p-5 space-y-2.5">
+              <span class="text-xs font-mono font-bold text-electrico uppercase">Nivel B &mdash; Gestión Integral de Sociedad y Caja</span>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Incluye todo el <strong class="text-white">Nivel A</strong> más el registro completo de movimientos de cuenta conjunta, distribución quincenal o mensual de retiros por socio, separación automática del fondo de reserva acordado, rendición quincenal de gastos con comprobantes y preparación de pagos en portal bancario para aprobación por token de los socios.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Módulo 06 -->
+      <article id="modulo-6" class="scroll-mt-24 bg-panel/70 border border-borde hover:border-electrico/50 rounded-2xl p-6 sm:p-8 transition">
+        <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6">
+          <div class="space-y-4 max-w-3xl">
+            <div class="flex flex-wrap items-center gap-3">
+              <span class="text-xs font-mono font-bold text-noche bg-electrico px-2.5 py-0.5 rounded">MÓDULO 06</span>
+              <span class="text-xs font-mono text-electrico uppercase tracking-wider">Modalidad: Setup Inicial + Soporte Mensual</span>
+            </div>
+            <h2 class="text-2xl font-bold text-white">Web Institucional y Correos Corporativos</h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              <strong class="text-white">Setup Inicial (a nombre del cliente):</strong> Registro de dominio propio (<code class="text-electrico">.com.ar</code> / <code class="text-electrico">.com</code>), diseño web institucional (Servicios, Obras, H&amp;S, Contacto) y configuración de casillas corporativas (<code class="text-slate-200">administracion@...</code>, <code class="text-slate-200">presupuestos@...</code>).<br>
+              <strong class="text-white">Soporte Mensual:</strong> Administración de cuentas de correo, hosting, certificado SSL y actualización periódica de obras.
+            </p>
+          </div>
+
+          <div class="shrink-0 flex flex-col sm:flex-row lg:flex-col gap-3 lg:w-56">
+            <a href="contacto.html?servicio=web" class="text-center bg-electrico hover:bg-electricoHover text-noche font-bold text-sm px-5 py-3 rounded-xl transition shadow-lg shadow-electrico/10">
+              Consultar por web
+            </a>
+            <span class="text-[11px] text-center text-slate-400">Dominio y cuentas 100% a nombre de tu empresa</span>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Llamado a la Acción -->
+    <section class="bg-panel border border-electrico/40 rounded-2xl p-6 sm:p-10 text-center max-w-4xl mx-auto space-y-4">
+      <span class="text-xs font-mono text-electrico uppercase tracking-widest">Armado a Medida</span>
+      <h2 class="text-2xl sm:text-3xl font-bold text-white">¿Necesitás combinar varios módulos o resolver una obra puntual?</h2>
+      <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+        Contame qué tipo de trabajos realizás, cuántas plantas o operarios manejás y qué procesos querés delegar para armar una propuesta ajustada a tu operación.
+      </p>
+      <div class="pt-2 flex flex-wrap justify-center gap-4">
+        <a href="contacto.html" class="bg-electrico hover:bg-electricoHover text-noche font-bold text-sm px-7 py-3.5 rounded-xl transition shadow-lg shadow-electrico/20">
+          Iniciar Consulta
+        </a>
+        <a href="perfil.html" class="bg-electrico hover:bg-electricoHover text-noche font-bold text-sm px-7 py-3.5 rounded-xl transition shadow-lg shadow-electrico/20">
+          Ver Perfil y CV
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-borde py-6 text-center text-xs text-slate-500">
+    <p>&copy; 2026 JavierLab.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
